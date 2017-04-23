@@ -7,7 +7,9 @@
 </ion-header>
 
 <ion-content padding>
-  
+  <button ion-button (click)="checkBlueTooth()">check bluetooth</button>
+  <button ion-button *ngIf="enable_button" (click)="toggleBlueTooth()">toggle bluetooth</button>
+  <button ion-button (click)="show_settings()">show settings</button>
   <p>
     {{msg}}
   </p>
